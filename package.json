@@ -1,0 +1,15 @@
+{
+  "name": "makeitrain",
+  "version": "1.0.0",
+  "description": "A Javascript game made utilizing CSS animations and DOM manipulation.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jacky Tea",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}

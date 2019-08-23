@@ -1,0 +1,197 @@
+/*
+    Jacky Tea
+    Make It Rain
+    22/08/19
+    styles.css
+*/
+
+@font-face {
+    font-family: robotoBold;
+    src: url("../assets/fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: robotoThin;
+    src: url("../assets/fonts/Roboto-Thin.ttf");
+}
+
+@font-face {
+    font-family: pressStart2P;
+    src: url("../assets/fonts/PressStart2P-Regular.ttf");
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 7fr 10fr 1fr;
+    grid-template-areas: "menu-bar" "field" "score-bar";
+    background: rgb(44, 44, 44);
+}
+
+#menu-bar {
+    z-index: 2;
+    grid-area: menu-bar;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo github";
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 10vh;
+    background: rgb(3, 3, 3);
+}
+
+#menu-bar #logo h1 {
+    grid-area: logo;
+    text-align: left;
+    margin: 30px 0 0 20px;
+    padding: 0;
+    font-family: pressStart2P;
+    font-size: 15px;
+    color: white;
+}
+
+#menu-bar #github {
+    grid-area: github;
+    margin: 15px 20px 0 0;
+    text-align: right;
+}
+
+#menu-bar #github svg {
+    fill: rgb(49, 49, 49);
+}
+
+#menu-bar #github svg:hover {
+    cursor: pointer;
+    transition: 0.25s;
+    fill: white;
+}
+
+#score-bar {
+    z-index: 2;
+    grid-area: score-bar;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "reset score";
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 10vh;
+}
+
+#score-bar #reset {
+    grid-area: reset;
+}
+
+#score-bar #reset button {
+    grid-area: reset;
+    cursor: pointer;
+    margin: 0 0 20px 20px;
+    padding: 5px;
+    border: none;
+    font-family: pressStart2P;
+    font-size: 25px;
+}
+
+#score-bar #score {
+    grid-area: score;
+}
+
+#score-bar #score h1 {
+    text-align: right;
+    margin: 0 20px 20px 0;
+    padding: 0;
+    font-family: pressStart2P;
+    font-size: 30px;
+    color: white;
+}
+
+#playable-area {
+    grid-area: field;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 80vh;
+    cursor: pointer;
+    text-align: center;
+    background: rgb(44, 44, 44);
+}
+
+#playable-area #start-dialog {
+    display: table;
+    width: 100%;
+    height: 90vh;
+}
+
+#playable-area #start-dialog h1 {
+    display: table-cell;
+    vertical-align: middle;
+    margin: auto;
+    font-family: pressStart2P;
+    font-size: 4vw;
+    animation: rainbow infinite 3.5s;
+}
+
+#playable-area .raindrop {
+    animation: spinning infinite 2.5s, fading 0.25s;
+}
+
+@keyframes spinning {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fading {
+    from {
+        opacity: 0.0;
+    }
+    to {
+        opacity: 1.0;
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        color: red;
+    }
+    10% {
+        color: orangered;
+    }
+    20% {
+        color: orange;
+    }
+    30% {
+        color: yellow;
+    }
+    40% {
+        color: yellowgreen;
+    }
+    50% {
+        color: green;
+    }
+    60% {
+        color: teal;
+    }
+    70% {
+        color: blue;
+    }
+    80% {
+        color: blueviolet
+    }
+    90% {
+        color: purple;
+    }
+    100% {
+        color: maroon;
+    }
+}
