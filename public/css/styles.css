@@ -99,6 +99,12 @@ html, body {
     font-size: 25px;
 }
 
+#score-bar #reset button:hover {
+    transition: 0.2s;
+    background: grey;
+}
+
+
 #score-bar #score {
     grid-area: score;
 }
