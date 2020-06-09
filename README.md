@@ -1,7 +1,7 @@
 # Make It Rain
 
 ## Overview
-Visit the site [here.](https://cryptic-river-57921.herokuapp.com/ "Make It Rain") **(Note: Site may take a while to connect to due to Heroku putting idle apps into a 'sleep' mode)**
+Visit the site [here.](https://jackytea.github.io/GH_Make_It_Rain/ "Make It Rain")
 
 A JavaScript clicker game made utilizing CSS animations and HTML DOM manipulation.
 
