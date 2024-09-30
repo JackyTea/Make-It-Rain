@@ -1,7 +1,7 @@
 # Make It Rain
 
 ## Overview
-Visit the site [here](https://jackytea.github.io/Make-It-Rain/)
+Visit the site [here](jackytea.github.io/rain-clicker/)
 
 A JavaScript clicker game made utilizing CSS animations and HTML DOM manipulation.
 
